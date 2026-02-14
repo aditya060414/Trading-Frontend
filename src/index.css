@@ -1,3 +1,7 @@
+html,
+body {
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   font-family:
@@ -593,8 +597,124 @@ select:focus {
   transform: rotate(45deg);
 }
 
-
-.navbar-link-active{
+.navbar-link-active {
   text-decoration: none;
-  color:#252728;
+  color: #252728;
+}
+
+.auth-layout {
+  margin: 0;
+  padding: 100px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.auth-layout .auth-layout-container {
+  border: 1px solid #d2d9e0;
+  box-shadow: 4px 8px 16px #b6dff8;
+  padding: 0px !important;
+  margin: 0 !important;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.auth-layout .auth-layout-container .authbrandf-info,.signup-login {
+  padding: 40px 0 5px 40px;
+}
+.auth-layout .auth-layout-container .authbrandf-info h4 {
+  color: #416cb8;
+  font-size: 1.85rem;
+}
+.auth-layout .auth-layout-container .authbrandf-info .brand-tagline {
+  display: flex;
+  position: relative;
+}
+.auth-layout .auth-layout-container .authbrandf-info .brand-tagline p {
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  padding: 0 10px 0 0;
+  font-weight: 500;
+}
+.auth-layout .auth-layout-container .authbrandf-info .brand-bio{
+  width: 60%;
+  font-size: 0.9rem;
+}
+.auth-layout .auth-layout-container .authbrandf-info .graph-img img{
+  width: 90%;
+}
+
+/* Container */
+.auth-container {
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Heading */
+.auth-container h3 {
+  margin-bottom: 6px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* Subtitle */
+.auth-container p {
+  margin-bottom: 22px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Form */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Inputs */
+.auth-form input {
+  padding: 10px 12px;
+  font-size: 14px;
+
+  border: 1px solid #cfd4dc;
+  border-radius: 6px;
+  outline: none;
+
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Focus */
+.auth-form input:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 0 0 2px rgba(30, 144, 255, 0.15);
+}
+
+/* Placeholder */
+.auth-form input::placeholder {
+  color: #8b8f97;
+}
+/* Chrome, Edge, Safari */
+.auth-form input[type="number"]::-webkit-inner-spin-button,
+.auth-form input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.auth-form input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* MUI Button override */
+.auth-btn {
+  align-self: flex-start;
+}
+
+.toggle{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

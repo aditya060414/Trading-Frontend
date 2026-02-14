@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
-
   return (
     <div className="container-fluid">
       <nav
@@ -23,7 +22,11 @@ export default function Navbar() {
           <form>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link" aria-current="page" to="/signup">
+                <Link
+                  className="nav-link"
+                  aria-current="page"
+                  to="/authentication"
+                >
                   Signup
                 </Link>
               </li>
