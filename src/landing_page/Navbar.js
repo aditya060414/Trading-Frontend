@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div className="container-fluid">
       <nav
         className="navbar navbar-expand-lg text-center border-bottom "
         style={{ backgroundColor: "#ffffff" }}
       >
         <Link className="navbar-brand" to="/">
           <img
-            src="media/images/logo.svg"
+            src="media/images/MarketExLogo.svg"
             alt="logo"
-            style={{ width: "23%" }}
+            style={{ width: "30%",display:"flex",padding:"0",margin:"0" }}
+
           />
         </Link>
         <div
@@ -59,6 +59,6 @@ export default function Navbar() {
           </form>
         </div>
       </nav>
-    </div>
+
   );
 }
